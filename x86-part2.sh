@@ -16,8 +16,8 @@ rm -rf package/feeds/luci/luci-app-openclash
 
 #调整软件在菜单中的名称
 #luci-app-homeproxy
-#sed -i 's/msgstr "HomeProxy"/msgstr "家庭代理"/g' package/homeproxy/po/zh_Hans/homeproxy.po
-#sed -i 's/msgstr "为 ARM64\/AMD64 设计的现代 ImmortalWrt 代理平台。"/msgstr "为 ARM64\/AMD64 设计的现代 OpenWrt 代理平台。"/g' package/homeproxy/po/zh_Hans/homeproxy.po
+sed -i 's/msgstr "HomeProxy"/msgstr "家庭代理"/g' package/homeproxy/po/zh_Hans/homeproxy.po
+sed -i 's/msgstr "为 ARM64\/AMD64 设计的现代 ImmortalWrt 代理平台。"/msgstr "为 ARM64\/AMD64 设计的现代 OpenWrt 代理平台。"/g' package/homeproxy/po/zh_Hans/homeproxy.po
 
 #luci-app-mihomo
 #删除 msgid "MihomoTProxy" 下的一行
