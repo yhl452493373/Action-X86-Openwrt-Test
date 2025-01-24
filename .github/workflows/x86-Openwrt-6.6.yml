@@ -259,12 +259,3 @@ jobs:
           retain_days: 10
           keep_minimum_runs: 10
 
-      - name: 删除旧的 Releases
-        uses: dev-drprasad/delete-older-releases@master
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
-        env:
-          GITHUB_TOKEN: ${{ secrets.OPENWRT_TOKEN }}
-        with:
-          keep_latest: 10
-          delete_tags: true
-
